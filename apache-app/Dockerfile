@@ -2,7 +2,7 @@
 FROM httpd:latest
 
 # คัดลอกไฟล์ HTML ของเว็บเพจไปยังโฟลเดอร์เริ่มต้นของ Apache
-COPY ../webpublic-html/ /usr/local/apache2/htdocs/
+COPY  ./webpublic-html/* /usr/local/apache2/htdocs/
 
-# เปิดพอร์ต 3002 สำหรับ Apache HTTP Server
-EXPOSE 3002
+# เปิดพอร์ต 80 สำหรับ Apache HTTP Server
+EXPOSE 80
